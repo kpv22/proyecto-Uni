@@ -1,0 +1,53 @@
+@keyframes scan {
+  0% {
+    transform: translate(55px, 24px);
+  }
+  40% {
+    transform: translate(55px, 220px);
+  }
+  60% {
+    transform: translate(55px, 24px);
+  }
+  to {
+    transform: translate(55px, 24px);
+  }
+}
+@keyframes showreel {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-285px);
+  }
+  30% {
+    transform: translateX(-285px);
+  }
+  40% {
+    transform: translateX(-570px);
+  }
+  50% {
+    transform: translateX(-570px);
+  }
+  60% {
+    transform: translateX(-855px);
+  }
+  70% {
+    transform: translateX(-855px);
+  }
+  80% {
+    transform: translateX(-1140px);
+  }
+  90% {
+    transform: translateX(-1140px);
+  }
+}
+#Scanner {
+  animation: scan 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+#Cards {
+  animation: showreel 12.5s cubic-bezier(0.6, 1.24, 0.76, 1.07) infinite;
+}
