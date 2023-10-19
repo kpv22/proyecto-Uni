@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+
 import {
   Card,
   Typography,
@@ -71,20 +72,15 @@ export default function SideBarT() {
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                 </ListItemPrefix>
-                Detalle de producto
+                <Link href={"/DetalleProducto"}> Detalle de Producto</Link>
               </ListItem>
               <ListItem>
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                 </ListItemPrefix>
-                Consultar stock
+                <Link href={"/RegistroVentas"}>Registro de Ventas</Link>
               </ListItem>
-              <ListItem>
-                <ListItemPrefix>
-                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
-                </ListItemPrefix>
-                Devolucion
-              </ListItem>
+              
               
             </List>
           </AccordionBody>
@@ -115,6 +111,7 @@ export default function SideBarT() {
           </ListItem>
           <AccordionBody className="py-1">
             <List className="p-0">
+              <Link href="Productos">
               <ListItem>
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
@@ -122,38 +119,41 @@ export default function SideBarT() {
                 Productos
                 
               </ListItem>
+              </Link>
+              <Link href="Categorias">
               <ListItem>
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                 </ListItemPrefix>
-                Usuarios
+                Categorias
                 
               </ListItem>
+              </Link>
+              <Link href="Empleados">
               <ListItem>
                 <ListItemPrefix>
                   <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                 </ListItemPrefix>
-                Ventas
+                Empleados
                 
               </ListItem>
+              </Link>
+              <Link href="Proveedor">
+              <ListItem>
+                <ListItemPrefix>
+                  <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                </ListItemPrefix>
+                Proveedor
+                
+              </ListItem>
+              </Link>
 
               
             </List>
           </AccordionBody>
         </Accordion>
         <hr className="my-2 border-blue-gray-50" />
-        <ListItem>
-          <ListItemPrefix>
-            <UserCircleIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Perfil
-        </ListItem>
-        <ListItem>
-          <ListItemPrefix>
-            <Cog6ToothIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Opciones
-        </ListItem>
+        
           <Link href={"/"}>
             <ListItem>
                 <ListItemPrefix>
